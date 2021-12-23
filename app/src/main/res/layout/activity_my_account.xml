@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:layout_margin="6pt"
+    tools:context=".Signup_Activity">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:fontFamily="monospace"
+        android:text="MY ACCOUNT"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/firstEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="169dp"
+        android:ems="10"
+        android:editable="false"
+        android:hint="First Name *"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:hint="Last Name *"
+        android:inputType="textPersonName"
+
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:hint=" Email id *"
+        android:inputType="textPersonName"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:editable="false"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorPrimary"
+        android:onClick="signUp"
+        android:text="DONE"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+
+
+</RelativeLayout>

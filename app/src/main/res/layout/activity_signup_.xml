@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:layout_margin="6pt"
+    tools:context=".Signup_Activity">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:fontFamily="monospace"
+        android:text="Join VisitEase now-- \n it's free! "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/firstEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="169dp"
+        android:ems="10"
+        android:hint="First Name *"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:hint="Last Name *"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:hint=" Email id *"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:hint="Phone Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:hint="Password *"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="112dp"
+        android:text="By Clicking SignUp Button you agree to the VisitEase" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="-112dp"
+        android:text="User Agreement and Privacy Policy"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorPrimary"
+        android:onClick="signUp"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/signin_textview"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-93dp"
+        android:layout_toEndOf="@+id/img"
+        android:text="Already have an account? Sign in "
+        android:textColor="@color/colorPrimary" />
+
+
+
+</RelativeLayout>
